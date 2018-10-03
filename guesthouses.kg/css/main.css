@@ -1,0 +1,121 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+main{
+	background-color: #fff;
+}
+.checked {
+		    color: orange;
+		}
+.titleofhotel h5{
+			margin-top: 0;
+		}
+.priceofhotels{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*align-content: space-between;*/
+	/*width: 800px;*/
+	/*background-color: red;*/
+}
+#priceofhotel{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
+.Navbar{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+}
+
+#priceofhotel div{
+	border: 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+    height: 45px;
+    background: #fff;
+}
+#priceofhotel div input{
+	border: none;
+    outline: none;
+    width: 190px;
+}
+
+#priceofhotel button{
+	border: 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+    background: red;
+    height: 45px;
+    width: 150px;
+}
+
+
+/* before footer */
+.beforefooter{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.beforefooter button{
+	border: 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+    background: red;
+    height: 45px;
+    width: 150px;
+}
+
+/*footer of our site*/
+footer{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/* style of hotel*/
+.registerPonel{
+	border-radius: 8px;
+	background-color: #fff;
+	display: inline-block;
+    padding: 15px;
+    width: 450px;
+}
+.registerPonel .input{
+	border: 1px solid;
+	border-radius: 8px;
+	margin-top: 5px;
+    padding: 5px;
+}
+.registerPonel .input input{
+	border: none;
+	outline: none;
+	margin: 5px;
+	width: 100%;
+}
+.registerPonel .inputdate{
+	display: flex;
+	justify-content: space-between;
+}
+.blockofchoose{
+	display: flex;
+	justify-content: space-between;
+
+}
+.nomerof{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000;
+	border-radius: 8px;
+	padding: 15px;
+}
+.placeofusers{
+	font-size: 30px;
+}
