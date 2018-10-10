@@ -1,0 +1,6 @@
+.dws-menu ul li a{
+    border: none;
+    border-radius: 0; 
+    padding: 3px 8px;
+    font-size: 18px;
+}

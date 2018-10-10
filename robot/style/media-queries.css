@@ -1,0 +1,58 @@
+/* Medium Devicesm Desktops */
+@media only screen and (max-width: 992px){
+	body{
+		background: #FFF;
+	}
+	#name{
+		float:none;
+		width: 100%;
+	}
+	.dws-menu{
+		margin: 0 auto;
+		display: block;
+	}
+	.nameContent{
+		margin-top: 15%;
+		margin-bottom: 9%;
+	}
+	#footer{
+		height: auto;
+
+	}
+	.contact{
+		padding-left: 10%;
+	}
+	#content{
+		height: auto;
+		padding-bottom: 2%;
+		/*margin-left: 0; */
+	}
+}
+/* Small Devices, Tablets*/
+@media only screen and (max-width: 768px){
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 510px){
+	.dws-menu{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+			}
+			.dws-menu ul{
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.activeA{
+				border: 2px solid #4bafb1!important;
+				border-radius: 4px!important;
+				box-shadow: 1px 1px 2px 2px #eee;
+			}
+			#name div {
+			    height: 100%;
+			}
+			#name div img{
+				height: 100%;
+			}
+}

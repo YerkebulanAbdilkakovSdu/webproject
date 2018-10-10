@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
 	<style>
-		@media only screen and (max-width: 550px) {
+		@media only screen and (max-width: 570px) {
 			.contect {
 			    display: flex;
 			    justify-content: center;
@@ -23,23 +23,15 @@
 					<img src="img/экспорт/Ресурс 26.png" alt="" style="display: block;">
 				</div>
 				<div id="headersslka" class="topnav" >
-					<a href="#" class="activehref">Главная</a>
-					<a href="#" >Регистрация</a>
-					<a href="#">Контакты</a>
+					<a href="index.html" class="activehref">Главная</a>
+					<a href="reg.html" >Регистрация</a>
+					<a href="contact.html">Контакты</a>
 					<a id="df" href="javascript:void(0);" class="icon" onclick="myFunction()" style="margin:0">
 					    <i class="fa fa-bars" style="font-size: 24px;"></i>
 					  </a>
 				</div>
 			</div>
-		</header>	
-		<style>
-			
-		   /* #textContact{
-		    	top: 2vw;
-		    	font-size: 22px;
-		    	left: 30vw;
-		    }*/
-		</style>
+		</header>
 		<div class="contect" >
 			<h5 id="textContact">Об ОЛИМПИАДЕ</h5>
 			<div id='block'>
@@ -70,9 +62,8 @@
 					Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, an adolescent ninja who searches for recognition from his peers and the village and also dreams of becoming the Hokage, the leader of his village.Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, an adolescent ninja who searches for recognition from his peers and the village and also dreams of becoming the Hokage, the leader of his village.Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, an adolescent ninja who searches for recognition from his peers and the village and also dreams of becoming the Hokage, the leader of his village.Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, an adolescent ninja who searches for recognition from his peers and the village and also dreams of becoming the Hokage, the leader of his village.Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, an adolescent ninja who searches for recognition from his peers and the village and also dreams of becoming the Hokage, the leader of his village.Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, an adolescent ninja who searches for recognition from his peers and the village and also dreams of becoming the Hokage, the leader of his village.
 				</p>
 				</div>
-				<div id="button">
-				</div>
-
+				<!-- <div id="button">
+				</div> -->
 			</div>
 			<img id="resurs3" src="img/экспорт/Ресурс 3.png" alt="">
 			<img id="resurs4" src="img/экспорт/Ресурс 4.png" alt="">
@@ -137,8 +128,9 @@
 		});
 	</script>
 	<script>
+		var x = document.getElementById("headersslka");
 		function myFunction() {
-		    var x = document.getElementById("headersslka");
+		    
 		    if (x.className === "topnav") {
 		        x.className += " responsive";
 		        document.getElementById("headerImg").style.display = "none";
@@ -147,7 +139,13 @@
 		        document.getElementById("headerImg").style.display = "flex";
 
 		    }
-		}	
+		}
+		// window.onclick = function(event) {			
+		//     if (event.target != document.getElementById("responsive") & event.target !=document.getElementById("df")) {
+		//     	  x.className = "topnav";
+		//         document.getElementById("headerImg").style.display = "flex";
+		//     }
+		// }	
 	</script>
 </body>
 </html>

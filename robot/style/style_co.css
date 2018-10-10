@@ -1,0 +1,27 @@
+#sixthA{
+	border: 1.5px solid #00FFFF;
+	border-radius: 5px;
+	padding: 3px 8px;	
+}
+#contentCo{
+	/*outline: 1px solid red;*/
+	width: 45%;
+	float: left;
+	margin-left:5%;
+}
+#contentCo2{
+	/*outline: 1px solid red;*/
+	width: 45%;
+	/*margin-left: 50%;*/
+}
+#content{
+	overflow: auto;
+}
+@media only screen and (max-width: 522px){
+	#contentCo{
+		width: 100%;
+	}
+	#contentCo2{
+		width: 100%;
+	}
+}

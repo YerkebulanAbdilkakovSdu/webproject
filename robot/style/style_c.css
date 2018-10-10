@@ -1,0 +1,31 @@
+
+#secondA{
+	border: 1.5px solid #00FFFF;
+	border-radius: 5px;
+	padding: 3px 8px;	
+}
+#content{
+	padding-top: 1.5%;
+}
+#text{
+	padding-bottom: 50px;
+}
+#text p{
+	padding-left: 50px; 
+}
+#text div{
+	overflow: auto;
+	max-height: 55vh;
+	margin-right: 70px;
+	padding-bottom: 50px;
+	padding-right: 20px;
+}
+
+@media only screen and (max-width: 522px){
+	#text div{
+		padding: 0;
+		margin: 0;}
+	#text p{
+		padding: 0;
+		}
+}

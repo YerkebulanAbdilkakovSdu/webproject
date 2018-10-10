@@ -5,6 +5,46 @@ body{
 main{
 	background-color: #fff;
 }
+nav{
+	background-color: transparent!important;
+	box-shadow: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav{
+	background-color: transparent!important;
+	box-shadow: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.headerTexts{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 70%;
+	color: #fff
+}
+.headerTexts h1{
+	margin: 0;
+	padding: 0;
+}
+.headerTexts button{
+	border: none;
+	border-radius: 8px;
+	outline: none;
+	background-color: #e6454b;
+	width: 250px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	margin-top: 25px;
+
+}
 .checked {
 		    color: orange;
 		}
@@ -27,6 +67,7 @@ main{
 	justify-content: space-between;
 }
 .Navbar{
+	margin-top: 55px;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -43,16 +84,20 @@ main{
 #priceofhotel div input{
 	border: none;
     outline: none;
-    width: 190px;
+    width: 170px;
 }
 
 #priceofhotel button{
-	border: 1px solid;
-    border-radius: 8px;
-    padding: 10px;
-    background: red;
-    height: 45px;
-    width: 150px;
+	border: none;
+	border-radius: 8px;
+	outline: none;
+	background-color: #e6454b;
+	width: 200px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
 }
 
 
@@ -63,44 +108,95 @@ main{
 	width: 100%;
 }
 .beforefooter button{
-	border: 1px solid;
-    border-radius: 8px;
-    padding: 10px;
-    background: red;
-    height: 45px;
-    width: 150px;
+	border: none;
+	border-radius: 8px;
+	outline: none;
+	background-color: #e6454b;
+	width: 200px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	margin: 55px;
 }
 
 /*footer of our site*/
 footer{
+	display: flex!important;
+	justify-content: space-between;
+	/*background-image: url('images/main/footer.jpg');*/
+}
+#footer{
 	display: flex;
 	justify-content: space-between;
 }
-
+.footer{
+/*background-image: url("images/main/photo-1515263555804-785bc7ff8b2f.png");
+*/	
+}
+.footertext{
+	width: 400px;
+}
 
 /* style of hotel*/
 .registerPonel{
+	position: absolute;
+	right: 30px;
 	border-radius: 8px;
 	background-color: #fff;
 	display: inline-block;
-    padding: 15px;
-    width: 450px;
+    padding: 30px;
+    width: 400px;
+}
+.registerPonel h4{
+	text-align: center;
+	margin: 30px 0;
+}
+.textform{
+	margin: 15px 0;
 }
 .registerPonel .input{
-	border: 1px solid;
-	border-radius: 8px;
+	border: 1px solid #d1d1d1;
+	border-radius: 4px;
 	margin-top: 5px;
     padding: 5px;
 }
 .registerPonel .input input{
 	border: none;
 	outline: none;
-	margin: 5px;
+	/*margin: 5px;*/
 	width: 100%;
 }
 .registerPonel .inputdate{
 	display: flex;
 	justify-content: space-between;
+}
+.registerPonel button{
+	display: flex;
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    padding: 14px;
+    text-align: center;
+    justify-content: center;
+    margin: 15px 0;
+    background-color: #e6454b;
+    color: #fff;
+}
+.Showphoto{
+	position: absolute;
+	bottom: 50px;
+	left: 70px;
+	display: flex;
+	background-color: #fff;
+    width: 200px;
+    border-radius: 4px;
+    border: none;
+    padding: 14px;
+    text-align: center;
+    justify-content: center;
+    margin: 15px 0;
 }
 .blockofchoose{
 	display: flex;
@@ -118,4 +214,31 @@ footer{
 }
 .placeofusers{
 	font-size: 30px;
+}
+.udobstva{
+	background-color: #f9fafc;
+	padding: 50px;
+}
+#udobstva{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+}
+.udobstva h4{
+	margin: 30px 0;
+}
+#udobstva div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#udobstva div span{
+	font-size: 22px;
+	margin-top: 15px;
+}
+#udobstva div img{
+	height: 80px;
+}
+.block{
+	padding: 30px 0;
 }

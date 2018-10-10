@@ -12,6 +12,7 @@ header{
 	height: 100px;
 }
 header .navHeader{
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -35,6 +36,7 @@ header .navHeader img{
 .contect{
 	position: relative;
 	height: 80vw;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -274,6 +276,7 @@ header .navHeader img{
     padding-right: 30px;
 }
 #contactinformaiton{
+	display: -webkit-flex;
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -293,6 +296,7 @@ header .navHeader img{
 	width: 46vw;
 	height: 39.64vw;
 	background-color: #fff;
+	display: -webkit-flex;
 	display: flex;
 	align-content: space-around;
 	justify-content: center;
@@ -309,7 +313,9 @@ header .navHeader img{
 	width: 65vw;
 	height: 45.64vw;
 	background-color: #87C1D8;
+	display: -webkit-flex;
 	display: flex;
+	-webkit-flex-direction
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -317,7 +323,9 @@ header .navHeader img{
 }
 
 #contactinformaiton div{
+	display: -webkit-flex;
 	display: flex;
+	-webkit-flex-direction
 	flex-direction: column;
 	align-items: flex-start;
 
@@ -338,6 +346,7 @@ footer{
 }
 .footer{
 	height: 100px;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -346,6 +355,7 @@ footer{
 #inputs div{
 	height: 2.5vw;
 	align-items: center;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: flex-start;
 	padding: 2px;
@@ -355,6 +365,7 @@ footer{
 .inputs div{
 	height: 2.5vw;
 	align-items: center;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: flex-start;
 	background-color: #3FA9F5;
@@ -396,13 +407,16 @@ footer{
 
 .first{
 				width: 100%;
+				display: -webkit-flex;
 				display: flex;
 				justify-content: space-around;
 			}
 			.rectangles{
 				width: 15vw;
+				display: -webkit-flex;
 				display: flex;
 				align-items: center;
+				-webkit-flex-direction
 				flex-direction: column;
 			}
 			.rectangle{
@@ -467,7 +481,7 @@ footer{
 	}
 	
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 570px) {
 	header{
 		    height: 70px;
 	}
@@ -478,6 +492,7 @@ footer{
 		width: 100%;
 	align-self: center;
     justify-self: center;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -499,7 +514,9 @@ footer{
 		    height: auto;
 		}
 		.first {
+			display: -webkit-flex;
 			display: flex;
+			-webkit-flex-direction
 			flex-direction: column;
 		    align-items: center;
 		}
@@ -550,6 +567,7 @@ footer{
 	}
 	img{display: none;}
 	.footer{
+		-webkit-flex-direction
 		flex-direction: column;
 		height: auto;
 	}
@@ -565,6 +583,7 @@ footer{
 		font-size: 22px;
 	}
 	.contect{
+		display: -webkit-flex;
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
