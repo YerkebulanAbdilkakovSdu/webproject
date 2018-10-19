@@ -1,0 +1,100 @@
+@media (max-width: 992px){
+	header{
+		height: 500px;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	}
+	
+	.headerTexts h1{
+		font-size: 3rem;
+	}
+	.headerTexts h4{
+		font-size: 1.65rem;
+    	line-height: 110%;
+    	margin: 1rem 0 .12rem 0;
+	}
+	.priceofhotels h3{font-size: 1.5rem}
+	.Navbar div{ text-transform: uppercase;}
+	#typeOfhotels { text-transform: uppercase; }
+}
+@media (max-width: 550px){
+	nav{
+		flex-direction: column;
+	}
+	header .logo{
+		margin-bottom: 35px;
+	}
+	.headerTexts h1{
+		font-size: 1.8rem;
+		margin-bottom: 11px;	
+	}
+	.headerTexts h4{
+		font-size: 0.95rem;
+    	line-height: 110%;
+    	margin: 1rem 0 .12rem 0;
+	}
+	.priceofhotels h3{font-size: 1.2rem}
+	#priceofhotel{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#priceofhotel div {
+		width: 150px;
+		margin: 10px 1.5px;
+	}
+	#priceofhotel div input {
+		width: 100%;
+	}
+	#footer{
+		flex-direction: column;
+	}
+	.Navbar div {
+	    width: 33%;
+	    text-transform: uppercase;
+	    display: flex;
+	    align-items: center;
+	}
+	#udobstva{ flex-wrap: wrap; }
+	.priceofroom{
+		margin-bottom: 25px;
+	}
+	.registerPonel{
+		display: none;
+	}
+	.Showphotodiv{
+		width: 100vw;
+		display: flex;
+		justify-content: space-around;
+		left: 0;
+	}
+	.Showphoto{
+		/*position: static;*/
+	}
+	.registerPonel{
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100%;
+		z-index: 100;
+	}
+	#priceofhotel button{
+		margin: 0;
+	}
+	.footertext{
+		width: 100%
+	}
+	#registr{
+		display: flex;
+	}
+	#logout{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		width: 45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 45px;
+	}
+}

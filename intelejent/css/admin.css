@@ -1,0 +1,19 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.btn-group{
+	margin: 25px;
+}
+.active{
+	background-color: #ef9a9a!important;
+}
+.searchbutton{
+	margin: 0;
+}
+.cardfixed{
+	position: fixed;
+	top: 100px;
+	width: 600px;
+	padding: 60px!important;
+}

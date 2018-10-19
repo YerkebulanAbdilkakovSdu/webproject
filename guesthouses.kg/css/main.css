@@ -1,9 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
 body{
 	margin: 0;
 	padding: 0;
+	font-family: 'Rubik', sans-serif;
 }
 main{
 	background-color: #fff;
+}
+header{
+	height: 120vh;
+	width: 100%;
+	background-image: url("../images/main/1.png");
+	background-size: 150% 150%;
+	background-position: center;
+}
+.card{
+	box-shadow: none!important;
+	border: 1px solid #eee;
+	}
+header .logo{
+	font-size: 28px;
+	font-weight: 600;
+}
+nav {
+	padding-top: 8px!important;
 }
 nav{
 	background-color: transparent!important;
@@ -12,6 +34,16 @@ nav{
 	justify-content: space-between;
 	align-items: center;
 }
+nav ul a {
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+}
+.activeula{ border-top-color: #fff!important; }
+nav{ height: auto; }
+nav ul a:hover{
+	border-bottom-color: #fff;
+}
+nav { line-height: 44px; }
 .nav{
 	background-color: transparent!important;
 	box-shadow: none;
@@ -71,7 +103,7 @@ nav{
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-
+	font-size: 1.4rem;
 }
 
 #priceofhotel div{
@@ -99,13 +131,20 @@ nav{
 	align-items: center;
 	color: #fff;
 }
-
+h3{
+	width: 100%;
+	font-size: 1.6rem;
+	justify-self: flex-start;
+}
 
 /* before footer */
 .beforefooter{
 	display: flex;
 	justify-content: center;
 	width: 100%;
+}
+#priceofhotel h5{
+	margin: 5px;
 }
 .beforefooter button{
 	border: none;
@@ -120,7 +159,9 @@ nav{
 	color: #fff;
 	margin: 55px;
 }
-
+h4{
+	font-size: 2rem;
+}
 /*footer of our site*/
 footer{
 	display: flex!important;
@@ -185,9 +226,7 @@ footer{
     color: #fff;
 }
 .Showphoto{
-	position: absolute;
-	bottom: 50px;
-	left: 70px;
+	
 	display: flex;
 	background-color: #fff;
     width: 200px;
@@ -197,6 +236,11 @@ footer{
     text-align: center;
     justify-content: center;
     margin: 15px 0;
+}
+.Showphotodiv{
+	position: absolute;
+	bottom: 50px;
+	left: 70px;
 }
 .blockofchoose{
 	display: flex;
@@ -217,7 +261,7 @@ footer{
 }
 .udobstva{
 	background-color: #f9fafc;
-	padding: 50px;
+	padding: 30px;
 }
 #udobstva{
 	display: flex;
@@ -231,6 +275,7 @@ footer{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 5px;
 }
 #udobstva div span{
 	font-size: 22px;
@@ -241,4 +286,37 @@ footer{
 }
 .block{
 	padding: 30px 0;
+}
+#typeOfhotels{
+	font-size: 1.4rem
+}
+.active{
+	border-bottom: 4px solid #968f8f;
+}
+.choosehotel{
+	cursor: default;
+	text-transform: uppercase;
+}
+#typeOfhotels{
+	text-transform: uppercase;
+}
+#social{
+	display: flex;
+}
+#social img{
+	height: 32px;
+	margin: 5px;
+}
+.contact li {
+	display: flex;
+	align-items: center;
+}
+.contact li img{
+	height: 24px;
+	background-color: red;
+	margin-right: 12px;
+}
+#logout{ display: none; }
+#registr{
+	display: none;
 }

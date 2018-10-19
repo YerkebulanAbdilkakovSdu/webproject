@@ -313,19 +313,17 @@ header .navHeader img{
 	width: 65vw;
 	height: 45.64vw;
 	background-color: #87C1D8;
-	display: -webkit-flex;
+	/*display: -webkit-flex;
 	display: flex;
-	-webkit-flex-direction
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	align-content: space-between;
+	align-content: space-between;*/
 }
 
 #contactinformaiton div{
 	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-direction
 	flex-direction: column;
 	align-items: flex-start;
 
@@ -415,9 +413,10 @@ footer{
 				width: 15vw;
 				display: -webkit-flex;
 				display: flex;
-				align-items: center;
-				-webkit-flex-direction
 				flex-direction: column;
+				align-items: center;
+		
+				
 			}
 			.rectangle{
 				width: 100%;
@@ -473,6 +472,9 @@ footer{
 
 
 
+#headerImg{
+	margin-top: 25px;
+}
 
 @media only screen and (max-width: 768px) {
 	#textContact {
@@ -516,9 +518,10 @@ footer{
 		.first {
 			display: -webkit-flex;
 			display: flex;
-			-webkit-flex-direction
+			
 			flex-direction: column;
 		    align-items: center;
+
 		}
 		.rectangle {
 		    height: 50vh!important;
@@ -567,7 +570,7 @@ footer{
 	}
 	img{display: none;}
 	.footer{
-		-webkit-flex-direction
+
 		flex-direction: column;
 		height: auto;
 	}
