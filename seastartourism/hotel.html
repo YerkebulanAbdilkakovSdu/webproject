@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		SEASTAR 
+	</title>
+		<!--Import Google Icon Font-->
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+<body>
+	<div id="app">
+		<header>
+			<div id="header">
+				<nav class="container">
+					<div class="logo">GuestHouses</div>
+					<div>
+						<ul>
+							<li>
+								<a href="#" class="activeula">Главная</a>
+							</li>
+							<li>
+								<a href="#">О нас</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<!-- <div class="headerTexts">
+				<h1>Бронируйте лучшее жилье у нас</h1>
+				<h4>Отдых - это уникальные инвестиции для вашего здоровья</h4>
+				<button> НАЙТИ ЖИЛЬЕ </button>
+			</div> -->
+		</header>
+		<div class="container">
+					<div class="carousel">
+			<div id="prev" class="direct">
+				<img src="images/left-arrow.svg">
+			</div>
+			<div id="carouselimgages">
+				<carouselimgages></carouselimgages>
+			</div>
+			<div id="next" class="direct">
+				<img src="images/right-arrow.svg">
+			</div>
+		</div>
+		</div>
+		<div class="container">
+			<div id="bookhotel">
+				<div id="fromto" class="bookhotel">
+					<span>Алматы</span>
+					<img src="images/icons/Алм-Дубай.png">
+					<span>Голливуд</span>		
+				</div>
+				<div id="calendar" class="bookhotel">
+					<img src="images/icons/калаендарь.png">
+					<span>07/10/18</span>
+				</div>
+				<div id="countofperson" class="bookhotel">
+					<img src="images/icons/количество людей.png">
+					<span>2 взрослых</span>
+				</div> 
+				<div id="holidaysday">
+					<img src="images/icons/7 дней.png">
+					<span>7-10 дней</span>
+				</div>
+			</div>
+			<div id="abouthotels">
+				<div id="titleandvote">
+					<div id="title">
+						<h3>Best Western Plus Island Plams holet</h3>
+						<h5>Калифорния</h5>
+					</div>
+					<div id="vote">
+						
+					</div>
+				</div>
+				<div id="description">
+					<p>Best Western Plus Island Plams holet - Здесь находятся все серии Наруто, начиная с самого начала. Они выложены с профессиональной русской многоголосой озвучкой и имеют отличное ...Здесь находятся все серии Наруто, начиная с самого начала. Они выложены с профессиональной русской многоголосой озвучкой и имеют отличное ...Здесь находятся все серии Наруто, начиная с самого начала. Они выложены с профессиональной русской многоголосой озвучкой и имеют отличное ...Здесь находятся все серии Наруто, начиная с самого начала. Они выложены с профессиональной русской многоголосой озвучкой и имеют отличное ...Здесь находятся все серии Наруто, начиная с самого начала. Они выложены с профессиональной русской многоголосой озвучкой и имеют отличное ...
+						
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="services">
+			<div  class="container">
+				<h3>Услуги</h3>
+				<services></services>
+			</div>
+		</div>
+		<div class="container">
+			<h4 class="titleofblocks">Тип комнаты</h4>
+			<bookrooms></bookrooms>
+			<h4 class="titleofblocks">Похожие туры</h4>
+			<similar></similar>
+		</div>
+		<footer class="footer"> 
+			<div id="footer" class="container ">
+				<div class="footertext">
+					<h4>SeaStarTourism</h4>
+					<p>
+						Мы ценим ваше времия и заботимся о наших туристах
+					</p>
+					OO "SeaStarTourism" 2018. Все права защищены
+				</div>
+				<div class="footercontact">
+					<h4>Мы в сети</h4>
+					<div id="social">
+						<img src="images/facebook.svg">
+						<img src="images/instagram.svg">
+						<img src="images/vk.svg">
+					</div>
+					<h5>Наши контакты</h5>
+					<ul  class="contact">
+						<li>
+							<img src="images/old-typical-phone.svg"><span>+7 727 111 11 11</span>
+						</li>
+						<li>
+							<img src="images/at.svg"><span>info.guesthouses.kg</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script type="text/javascript">
+
+
+
+      	var dateofhotel = {
+      		services: {
+      			img: ["images/icons/wifi.png","images/icons/бассейн.png","images/icons/бассейн.png","images/icons/бассейн.png","images/icons/бассейн.png","images/icons/бассейн.png"],
+      			title: ["Бесплатный Wi-fi1","Бесплатный Wi-fi2","Бесплатный Wi-fi3","Бесплатный Wi-fi4","Бесплатный Wi-fi5","Бесплатный Wi-fi6"]
+      		},
+      		book_rooms: {
+      			title: ["Super-classic room1","Super-classic room2","Super-classic room3","Super-classic room4","Super-classic room5"],
+      			price:[20000,1243521,123500,234234,234234]
+      		},
+      		hotel: {
+			    name : ['Yerkebulan_1','Yerkebulan_2','Yerkebulan_3','Yerkebulan_4','Yerkebulan_5','Yerkebulan_6','Yerkebulan_7','Yerkebulan_8','Yerkebulan_9','Yerkebulan_10'],
+			    type : ['new','popular','fff','new','popular','fff','new','popular','fff','new'],
+			    ocenka: [0,3,4,5,1,2,3,4,4,1],
+			    oldprice  : [0,334,0,5456,123,0,3444,444324,4242,1243],
+			    price  : [200,334,4546,5456,123,223434,3444,444324,4242,1243]
+			},
+			path: ["images/images/5.jpg","images/images/1.jpg","images/images/2.jpg","images/images/3.jpg","images/images/4.jpg"]
+      	}
+      	Vue.component('carouselimgages',{
+      		data: function () {
+      			return {
+      				path: dateofhotel.path
+      			}
+      		},
+      		template: '	<div class="carouselimgages">\
+							<div class="imageofcarousel" v-for="p in path">\
+								<img class="imageofcarouselimg" v-bind:src="p">\
+							</div>\
+						</div>'
+      	});
+      	Vue.component ('similar', {
+		    data: function () {
+		      return {
+		        name: dateofhotel.hotel.name,
+		        type: dateofhotel.hotel.type,
+		        ocenka: dateofhotel.hotel.ocenka,
+		        oldprice: dateofhotel.hotel.oldprice,
+		        price: dateofhotel.hotel.price
+		      }
+		    },
+		    template: '<div class="row">\
+						    <div class="col s12 m6 l4" v-for=" i in name.length ">\
+								<div class="card">\
+					                <div class="card-image">\
+					                  <img src="images/sample-1.jpg">\
+					                  <span class="card-title">{{ name[i-1] }}</span>\
+					                </div>\
+					                <div class="card-content">\
+					                    <div class="titleofhotel">\
+					                     <h5 class="oldprice" v-if="oldprice[i-1]==0"></h5>\
+						                    <h5 class="oldprice" v-else>Цена: <span>{{ oldprice[i-1] }} тг</span></h5>\
+						                </div>\
+						                <div>\
+						                    <div class="price"><h5>{{ price[i-1] }} тг</h5></div>\
+						                </div>\
+						                <div>\
+						                	<button>Подробнее</button>\
+						                </div>\
+							        </div>\
+							    </div>\
+							</div>\
+						</div>'
+		});
+
+
+      	// alert( dateofhotel.book_rooms.price.length +"   " + dateofhotel.book_rooms.title.length)
+      	Vue.component ('bookrooms', {
+		    data: function () {
+		      return {
+		      	title_of_book_rooms: dateofhotel.book_rooms.title,
+		        price_of_book_rooms: dateofhotel.book_rooms.price		       
+		      }
+		    },
+		    template: '	<div class="row">\
+							<div class="col s12 m12 l6" v-for="i in title_of_book_rooms.length">\
+								<div class="book_rooms">\
+								 	<div>\
+								 		<h5>{{ title_of_book_rooms[i-1] }}</h5>\
+								 		 <h4>от {{ price_of_book_rooms[i-1]}} тг</h4>\
+								 	</div>\
+								 	<button class="book_rooms_button">\
+								 		Бронировать\
+								 	</button>\
+								</div>\
+							</div>\
+						</div>\
+						'
+		});
+      	Vue.component ('services', {
+		    data: function () {
+		      return {
+		      	title_of_services: dateofhotel.services.title,
+		        img_of_services: dateofhotel.services.img		       
+		      }
+		    },
+		    template: '	<div class="row services" >\
+						    <div class="col l2 m3 s4" v-for="i in img_of_services.length">\
+								<div class="imgf"><img v-bind:src="img_of_services[i-1]"></div>\
+								<span>{{ title_of_services[i-1] }}</span>\
+							</div>\
+						</div>\
+						'
+		});
+      	
+		new Vue({
+			el: '#app'
+		});
+
+
+		var margin = 0;
+    	var carouselimgages = $('#carouselimgages').width();
+    	var carouselimgageslength = $('.carouselimgages').width()
+    	console.log(carouselimgageslength)
+    	$(document).ready(function(){
+    		$('.imageofcarouselimg').click(function(){
+    			$('header').css('background-image', 'url(' + $(this).attr('src') + ')');
+    		// $("#main_img img").attr('src',);
+    	})
+	  	$('#prev').click(function(){
+		   	if(carouselimgages < carouselimgageslength + margin){
+		   		margin -=230;
+		   		$(".carouselimgages").animate({  marginLeft: margin + 'px'}, 500);
+	   		}
+	   	});
+	   	$('#next').click(function(){
+		   	if(margin != 0){
+		   		margin +=230;
+		   		$(".carouselimgages").animate({  marginLeft: margin + 'px'}, 500);
+		   	}
+	   	});
+    	})
+      </script>
+    </body>
+</html>

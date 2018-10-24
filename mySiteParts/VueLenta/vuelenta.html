@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+	<script type="text/javascript">
+		new Vue({
+			el: "#app",
+			data: {
+				tweets: [],
+				resource_url: 'http://jsonplaceholder.typicode.com/todos/',
+				loading: false
+			},
+			methods: {
+				load: function(){
+					this.$http.get(this.resource_url).then(function(response) {
+						var json = response.data,
+							tweets = json.data
+						this.tweets = this.tweets.concat(tweets)
+						this.resource_urle = json.next_page_url
+						this.loading = false
+					},function(error){
+						console.log("eror")
+					})
+				}
+			}
+		})
+	</script>
+</body>
+</html>

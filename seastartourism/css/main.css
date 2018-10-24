@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Rubik', sans-serif;
+	background-color: #f8f8f8 ;
+}
+main{
+	background-color: #fff;
+}
+header{
+	height: 100vh;
+	width: 100%;
+	background-image: url("../images/images/images/photo-1534253893894-10d024888e49.jpg");
+	background-size: 100% 100%;
+	background-position: center;
+}
+.card{
+	box-shadow: none!important;
+	border: 1px solid #eee;
+	}
+#header{
+	background-color: rgba(179, 168, 168, 0.4);
+}
+
+/* bookhotel */
+.bookhotel{
+	border-right: 2px solid #eee
+}
+#bookhotel{
+	width: 100%;
+	padding: 15px;
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #f2f2f2;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#bookhotel .bookhotel{
+	width: 25%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#bookhotel img{
+	height: 32px;
+}
+#description{
+	margin-bottom: 45px;
+}
+#title h3{
+	color: #47b2bc;
+}
+#title h5{
+	margin-bottom: 35px;
+	font-size: 1.4rem;
+}
+#services{
+	background-color: #fff;
+	padding: 25px;
+}
+.services{
+/*	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;*/
+}
+.services span{
+	text-align: center;
+}
+.services .imgf{
+	height: 74px;
+	width: 74px;
+	border-radius: 74px;
+	/*padding: 10px;*/
+	background-color: #47b2bc;
+}
+.services .imgf img{
+	width: 54px;
+}
+.services div{
+	padding: 10px!important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.book_rooms{
+	padding: 25px!important;
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 8px;
+	background-color: #fff;
+	border: 1px solid #d8d8d8;
+}
+.book_rooms h5{
+	color: #b1adad;
+	font-size: 1.4rem
+}
+.book_rooms h4{
+	color: #4c4c4c;
+	font-size: 1.6rem;
+}
+.book_rooms_button{
+	outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 40px;
+    width: 150px;
+    background-color: #47b2bc;
+    color: #fff;
+}
+.titleofblocks{
+	margin-bottom: 25px;
+	margin-top: 45px;
+}
+header .logo{
+	font-size: 28px;
+	font-weight: 600;
+}
+nav {
+	padding-top: 8px!important;
+}
+nav{
+	background-color: transparent!important;
+	box-shadow: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav ul a {
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+}
+.activeula{ border-top-color: #fff!important; }
+nav{ height: auto; }
+nav ul a:hover{
+	border-bottom-color: #fff;
+}
+nav { line-height: 44px; }
+.nav{
+	background-color: transparent!important;
+	box-shadow: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.headerTexts{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 70%;
+	color: #fff
+}
+.headerTexts h1{
+	margin: 0;
+	padding: 0;
+}
+.headerTexts button{
+	border: none;
+	border-radius: 8px;
+	outline: none;
+	background-color: #e6454b;
+	width: 250px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	margin-top: 25px;
+
+}
+.checked {
+		    color: orange;
+		}
+.titleofhotel h5{
+			margin-top: 0;
+		}
+.priceofhotels{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*align-content: space-between;*/
+	/*width: 800px;*/
+	/*background-color: red;*/
+}
+#priceofhotel{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
+.Navbar{
+	margin-top: 55px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 1.4rem;
+}
+
+#priceofhotel div{
+	border: 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+    height: 45px;
+    background: #fff;
+}
+#priceofhotel div input{
+	border: none;
+    outline: none;
+    width: 170px;
+}
+
+#priceofhotel button{
+	border: none;
+	border-radius: 8px;
+	outline: none;
+	background-color: #e6454b;
+	width: 200px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+h3{
+	width: 100%;
+	font-size: 1.6rem;
+	justify-self: flex-start;
+}
+
+/* before footer */
+.beforefooter{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+#priceofhotel h5{
+	margin: 5px;
+}
+.beforefooter button{
+	border: none;
+	border-radius: 8px;
+	outline: none;
+	background-color: #e6454b;
+	width: 200px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	margin: 55px;
+}
+h4{
+	font-size: 2rem;
+}
+/*footer of our site*/
+footer{
+	display: flex!important;
+	justify-content: space-between;
+	background-image: url('../images/images/2.jpg');
+}
+#footer{
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+}
+.footer{
+/*background-image: url("images/photo-1458981924569-078d1b7cde24.jpg");*/
+	
+}
+.footertext{
+	width: 400px;
+}
+.footercontact h4,h5{
+	font-size: 1.2rem;
+}
+
+/* style of hotel*/
+
+
+#social{
+	display: flex;
+}
+#social img{
+	height: 24px;
+	margin: 5px;
+}
+.contact li {
+	display: flex;
+	align-items: center;
+}
+.contact li img{
+	height: 24px;
+	/*background-color: red;*/
+	margin-right: 12px;
+}
+
+/* card style*/
+.card{
+	height: 400px;
+}
+.card-content{
+	position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.card-content button{
+	outline: none;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #47b2bc;
+    color: #fff;
+}
+.card-content  h5{
+	margin-bottom: 0; 
+}
+.price{
+	margin-bottom: 23px;
+}
+.oldprice{
+	font-size: 16px;
+	color: #a9a6a6;
+}
+.oldprice span{
+	text-decoration: line-through;
+}
+.card-title{
+	background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+/* 47b2bc*/
+
+
+.carousel{
+	display: flex;
+	width: 100%;
+	height: 200px;
+}
+.direct{
+	width: 100px;
+	display: flex;
+	padding: 5px;
+}
+.direct img{
+	width: 90%;
+}
+#carouselimgages{
+	width: 70%;
+	overflow-x: hidden;
+	display: flex;
+	align-items: center;
+}
+.carouselimgages{
+	display: flex;
+}
+#carouselimgages .imageofcarousel{
+	width: 230px;
+}
+.imageofcarousel img{width: 90%;}
+
+
+
+/* index*/
+#oursponsor {
+	background-color: #f3f2f6;
+}

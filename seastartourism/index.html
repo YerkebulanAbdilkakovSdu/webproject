@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		SEASTAR 
+	</title>
+		<!--Import Google Icon Font-->
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style type="text/css">
+    	header{
+    		background-image: url("images/images/2.jpg");}
+    </style>
+    </head>
+<body>
+	<header>
+		<div id="header">
+			<nav class="container">
+				<div class="logo">GuestHouses</div>
+				<div>
+					<ul>
+						<li>
+							<a href="#" class="activeula">Главная</a>
+						</li>
+						<li>
+							<a href="#">О нас</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="headerTexts">
+			<h1>Мы ценим ваше времия и <br /> заботимся о наших туристах</h1>
+			<!-- <h4>Отдых - это уникальные инвестиции для вашего здоровья</h4> -->
+			<!-- <button> НАЙТИ ЖИЛЬЕ </button> -->
+		</div>
+		<div class="container">
+			<div id="bookhotel">
+				<div id="fromto" class="bookhotel">
+					<span>Алматы</span>
+					<img src="images/icons/Алм-Дубай.png">
+					<span>Голливуд</span>		
+				</div>
+				<div id="calendar" class="bookhotel">
+					<img src="images/icons/калаендарь.png">
+					<span>07/10/18</span>
+				</div>
+				<div id="countofperson" class="bookhotel">
+					<img src="images/icons/количество людей.png">
+					<span>2 взрослых</span>
+				</div> 
+				<div id="holidaysday">
+					<img src="images/icons/7 дней.png">
+					<span>7-10 дней</span>
+				</div>
+			</div>
+			
+		</div>
+	</header>
+	<div class="container" style="margin-top: 55px;">
+		<div id="app">
+			<app-car></app-car>
+		</div>
+	</div>
+	<div class="beforefooter">
+		<button>ПОСМОТРЕТЬ</button>
+	</div>
+	<div id="oursponsor">
+		<div class="container">
+			<div class="carousel">
+			<div id="prev" class="direct">
+				<img src="images/left-arrow.svg">
+			</div>
+			<div id="carouselimgages">
+				<div class="carouselimgages">
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/1.PNG">
+					</div>
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/1.PNG">
+					</div>
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/1.PNG">
+					</div>
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/1.PNG">
+					</div>
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/1.PNG">
+					</div>
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/1.PNG">
+					</div>
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/1.PNG">
+					</div>
+				</div>
+			</div>
+			<div id="next" class="direct">
+				<img src="images/right-arrow.svg">
+			</div>
+		</div>
+		</div>
+	</div>
+	<footer class="footer"> 
+		<div id="footer" class="container ">
+			<div class="footertext">
+				<h4>SeaStarTourism</h4>
+				<p>
+					Мы ценим ваше времия и заботимся о наших туристах
+				</p>
+				OO "SeaStarTourism" 2018. Все права защищены
+			</div>
+			<div class="footercontact">
+				<h4>Мы в сети</h4>
+				<div id="social">
+					<img src="images/facebook.svg">
+					<img src="images/instagram.svg">
+					<img src="images/vk.svg">
+				</div>
+				<h5>Nashi Contact</h5>
+				<ul  class="contact">
+					<li>
+						<img src="images/old-typical-phone.svg"><span>+7 727 111 11 11</span>
+					</li>
+					<li>
+						<img src="images/at.svg"><span>info.guesthouses.kg</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script type="text/javascript">
+    	var margin = 0;
+    	var carouselimgages = $('#carouselimgages').width();
+    	var carouselimgageslength = $('.carouselimgages').width()
+	  	$('#prev').click(function(){
+		   	if(carouselimgages < carouselimgageslength + margin){
+		   		margin -=230;
+		   		$(".carouselimgages").animate({  marginLeft: margin + 'px'}, 500);
+	   		}
+	   	});
+	   	$('#next').click(function(){
+		   	if(margin != 0){
+		   		margin +=230;
+		   		$(".carouselimgages").animate({  marginLeft: margin + 'px'}, 500);
+		   	}
+	   	});
+	   </script>
+</body>
+</html>

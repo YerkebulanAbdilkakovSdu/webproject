@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		SEASTAR 
+	</title>
+		<!--Import Google Icon Font-->
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style type="text/css">
+    	header{
+    		background-image: url("images/images/2.jpg");}
+    	.dropbtn1,.dropbtn2,.dropbtn3 {
+		    padding: 16px;
+		    border: none;
+		    cursor: pointer;
+		}
+
+		.dropdown1 {
+		    display: inline-block;
+		}
+
+		.dropdown-content1, .dropdown-content2, .dropdown-content3,.dropdown-content4{
+			display: none;
+		    margin-top: 15px;
+		    position: absolute;
+		    width: 100PX;
+		    /*left: 0;*/
+		    background-color: #fff;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		    z-index: 1;
+		}
+		.dropdown-content1{
+			left:0;
+		}
+		.dropdown-content2{
+			right: 75%!important;
+		}
+		.dropdown-content3{
+			right: 0;
+			width: calc( 25% + 15px);
+			text-align: center;
+			/*padding: 15px;*/
+		}
+		.dropdown-content4{
+			right: 25%;
+			width: 25%;
+			display: block;
+		}
+
+		.dropdown-content1 span, .dropdown-content2 span,.dropdown-content3 span {
+		    color: black;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		     cursor: pointer;
+		}
+		.countofperson{
+			display: flex;
+			justify-content: space-between;
+			padding: 15px;
+		}
+
+		.dropdown-content1 span:hover,.dropdown-content2 span:hover,.dropdown-content3 span:hover,.countofperson:hover 	{background-color: #f1f1f1}
+
+		.dropdown1:hover .dropdown-content1,.dropdown2:hover .dropdown-content2,.dropdown3:hover .dropdown-content3 {
+		    display: block;
+		}
+
+		.dropdown1:hover .dropbtn1 {
+		    /*background-color: #3e8e41;*/
+		}
+    </style>
+    </head>
+<body>
+	<header>
+		<div id="header">
+			<nav class="container">
+				<div class="logo">GuestHouses</div>
+				<div>
+					<ul>
+						<li>
+							<a href="#" class="activeula">Главная</a>
+						</li>
+						<li>
+							<a href="#">О нас</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="headerTexts">
+			<h1>Мы ценим ваше времия и <br /> заботимся о наших туристах</h1>
+			<!-- <h4>Отдых - это уникальные инвестиции для вашего здоровья</h4> -->
+			<!-- <button> НАЙТИ ЖИЛЬЕ </button> -->
+		</div>
+		<div class="container">
+			<div id="bookhotel">
+				<div id="fromto" class="bookhotel">
+				    <div class="dropdown1">
+					    <span class="dropbtn1">Almaty</span>
+					  	<div class="dropdown-content1">
+					    	<span  href="#">Link 1</span >
+					    	<span  href="#">Link 2</span >
+					    	<span href="#">Link 3</span >
+					  	</div>
+					</div>        
+					<img src="images/icons/Алм-Дубай.png">
+					<div class="dropdown2">
+					    <span class="dropbtn2">Голл</span>
+					  	<div class="dropdown-content2">
+					    	<span href="#">Link@ 1</span>
+					    	<span href="#">Link@ 2</span>
+					    	<span href="#">Link@ 3</span>
+					  	</div>
+					</div>	
+				</div>
+				<div id="calendar" class="bookhotel">
+					<img src="images/icons/калаендарь.png">
+					<span>07/10/18</span>
+				</div>
+				<div id="countofperson" class="bookhotel">
+					<img src="images/icons/количество людей.png">
+					<!-- <span>2 взрослых</span> -->
+					<div class="dropdown4">
+					    <span class="dropbtn4">2 взрослых</span>
+					  	<div class="dropdown-content4">
+					    	<div class="countofperson">
+					    		<span>взрослых</span>
+					    		<div>
+					    			<span class="minuccount">-</span>
+					    			<span class="ccount">0</span>
+					    			<span class="pluscount">+</span>
+					    		</div>
+					    	</div>
+					    	<div class="countofperson">
+					    		<span>Link@ 2</span>
+					    		<div>
+					    			<span class="minuccount">-</span>
+					    			<span class="ccount">0</span>
+					    			<span class="pluscount">+</span>
+					    		</div>
+					    	</div>
+					  	</div>
+					</div>
+				</div> 
+				<div id="holidaysday" class="bookhotel" style="border-right: none;">
+					<img src="images/icons/7 дней.png">
+					<!-- <span>7-10 дней</span> -->
+					<div class="dropdown3">
+					    <span class="dropbtn3">7-10 дней</span>
+					  	<div class="dropdown-content3">
+					    	<span href="#">Link@ 1</span>
+					    	<span href="#">Link@ 2</span>
+					    	<span href="#">Link@ 3</span>
+					  	</div>
+					</div>	
+				</div>
+			</div>
+			
+		</div>
+	</header>
+	aljenfalefnksdflnsflsnfsl<br><br><br><br><br><br><br><br><br><br>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="main.js"></script> -->
+	<script type="text/javascript">
+		   // $(document).ready(function(){
+		   		$(".dropdown-content1 span").click(function(){
+		   			$(".dropbtn1").text($(this).text());
+		   		});
+		   		$(".dropdown-content2 span").click(function(){
+		   			$(".dropbtn2").text($(this).text());
+		   		});
+		   		$(".dropdown-content3 span").click(function(){
+		   			$(".dropbtn3").text($(this).text());
+		   		});
+		   		var count = 0;
+		   		$(".minuccount").click(function(){
+		   			// alert();
+		   			var d = $(".ccount");
+		   			d.text("sdf")
+		   		})
+		   //})
+
+	</script>
+</body>
+</html>

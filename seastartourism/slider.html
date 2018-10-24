@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<!--Import Google Icon Font-->
+  	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style type="text/css">
+  		.carousel{
+  			display: flex;
+  			width: 100%;
+  		}
+  		.direct{
+  			width: 200px;
+  		}
+  		.direct img{
+  			width: 90%;
+  		}
+  		#carouselimgages{
+  			width: 70%;
+  			overflow-x: hidden;
+    		display: flex;
+    		align-items: center;
+  		}
+  		.carouselimgages{
+  			/*width: auto;*/
+  			display: flex;
+  			/*flex-wrap: wrap;*/
+  		}
+  		#carouselimgages .imageofcarousel{
+  			width: 270px;
+  		}
+  		.imageofcarousel img{width: 90%;}
+  		header{
+  			height: 100vh;
+  		}
+    </style>
+</head>
+<body>
+	<header>
+		<div id="main_img">
+			<img src="images/images/images/photo-1534253893894-10d024888e49.jpg">
+		</div>
+		<div class="carousel">
+			<div id="prev" class="direct">
+				<img src="images/left-arrow.svg">
+			</div>
+			<div id="carouselimgages">
+				<div class="carouselimgages">
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/images/photo-1424873380396-9580028d74db.jpg">
+					</div>
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/images/photo-1424873380396-9580028d74db.jpg">
+					</div>
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/images/photo-1424873380396-9580028d74db.jpg">
+					</div>
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/images/photo-1424873380396-9580028d74db.jpg">
+					</div>
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/images/photo-1424873380396-9580028d74db.jpg">
+					</div>
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/images/photo-1424873380396-9580028d74db.jpg">
+					</div>
+					<div class="imageofcarousel">
+						<img class="imageofcarouselimg" src="images/images/photo-1424873380396-9580028d74db.jpg">
+					</div>
+				</div>
+			</div>
+			<div id="next" class="direct">
+				<img src="images/right-arrow.svg">
+			</div>
+		</div>
+	</header>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    	var margin = 0;
+    	var carouselimgages = $('#carouselimgages').width();
+    	var carouselimgageslength = $('.carouselimgages').width()
+    	$('.imageofcarouselimg').click(function(){
+    		$("#main_img img").attr('src',$(this).attr('src'));
+    	})
+	  	$('#prev').click(function(){
+		   	if(carouselimgages < carouselimgageslength + margin){
+		   		margin -=270;
+		   		$(".carouselimgages").animate({  marginLeft: margin + 'px'}, 500);
+	   		}
+	   	});
+	   	$('#next').click(function(){
+		   	if(margin != 0){
+		   		margin +=270;
+		   		$(".carouselimgages").animate({  marginLeft: margin + 'px'}, 500);
+		   	}
+	   	});
+    </script>
+</body>
+</html>
